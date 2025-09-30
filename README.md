@@ -58,71 +58,85 @@ df = pd.DataFrame(data)
 print("DataFrame de empleados:")
 print(df)
 
-📋 Descripción de los Datos
-id_empleado: Identificador único del empleado (1-20)
-nombre: Nombre completo del empleado
-edad: Edad en años (25-45)
-salario: Salario anual en euros (44,000-95,000)
-departamento: Departamento de trabajo (IT, Ventas, RRHH, Marketing, Finanzas)
-fecha_ingreso: Fecha de ingreso a la empresa (2016-2021)
-activo: Estado del empleado (True/False)
-email: Correo electrónico corporativo
-telefono: Número de teléfono con formato español
-ciudad: Ciudad de trabajo (Madrid, Barcelona, Valencia, Sevilla, Bilbao)
-🎯 Uso en los Ejercicios
-Ejercicios 1-5: Usar df_empleados para practicar filtros y operadores lógicos
-🚀 Ejercicios a Resolver
-Ejercicio 1: Filtros Básicos
-Realiza estos filtros simples:
+## 📋 Descripción de los Datos
 
-Empleados con salario mayor a 50,000
-Empleados menores de 35 años
-Empleados del departamento 'IT'
-Implementa tu solución en: src/ejercicio_01.py
+- **id_empleado**: Identificador único del empleado (1-20)
+- **nombre**: Nombre completo del empleado
+- **edad**: Edad en años (25-45)
+- **salario**: Salario anual en euros (44,000-95,000)
+- **departamento**: Departamento de trabajo (`IT`, `Ventas`, `RRHH`, `Marketing`, `Finanzas`)
+- **fecha_ingreso**: Fecha de ingreso a la empresa (2016-2021)
+- **activo**: Estado del empleado (`True`/`False`)
+- **email**: Correo electrónico corporativo
+- **telefono**: Número de teléfono con formato español
+- **ciudad**: Ciudad de trabajo (`Madrid`, `Barcelona`, `Valencia`, `Sevilla`, `Bilbao`)
 
-Archivo: src/ejercicio_01.py
+---
 
-Ejercicio 2: Operadores Lógicos (AND, OR, NOT)
-Combina condiciones con operadores lógicos:
+## 🎯 Uso en los Ejercicios
 
-Empleados de IT Y salario mayor a 60,000
-Empleados de Ventas O mayores de 40 años
-Empleados que NO son de Marketing
-Recuerda usar: & para AND, | para OR, ~ para NOT
+- **Ejercicios 1-5**: Usar `df_empleados` para practicar filtros y operadores lógicos
 
-Implementa tu solución en: src/ejercicio_02.py
+---
 
-Archivo: src/ejercicio_02.py
+## 🚀 Ejercicios a Resolver
 
-Ejercicio 3: Método isin()
-Usa isin() para filtrar múltiples valores:
+<details>
+    <summary><strong>Ejercicio 1: Filtros Básicos</strong></summary>
 
-Empleados de IT o Ventas
-Empleados con edad de 28, 35 o 42 años
-Pista: El método isin() acepta una lista de valores para comparar.
+    Realiza estos filtros simples:
+    - Empleados con salario mayor a 50,000
+    - Empleados menores de 35 años
+    - Empleados del departamento 'IT'
 
-Implementa tu solución en: src/ejercicio_03.py
+    Implementa tu solución en: `src/ejercicio_01.py`
+</details>
 
-Archivo: src/ejercicio_03.py
+<details>
+    <summary><strong>Ejercicio 2: Operadores Lógicos (AND, OR, NOT)</strong></summary>
 
-Ejercicio 4: Filtros con Texto
-Filtra usando métodos de string:
+    Combina condiciones con operadores lógicos:
+    - Empleados de IT **Y** salario mayor a 60,000
+    - Empleados de Ventas **O** mayores de 40 años
+    - Empleados que **NO** son de Marketing
 
-Empleados cuyos nombres empiezan con 'M'
-Departamentos que contienen 'R'
-Pista: Usa .str.startswith() y .str.contains() para filtros de texto.
+    Recuerda usar: `&` para AND, `|` para OR, `~` para NOT
 
-Implementa tu solución en: src/ejercicio_04.py
+    Implementa tu solución en: `src/ejercicio_02.py`
+</details>
 
-Archivo: src/ejercicio_04.py
+<details>
+    <summary><strong>Ejercicio 3: Método <code>isin()</code></strong></summary>
 
-Ejercicio 5: Combinando Filtros
-Combina diferentes tipos de filtros:
+    Usa `isin()` para filtrar múltiples valores:
+    - Empleados de IT o Ventas
+    - Empleados con edad de 28, 35 o 42 años
 
-Empleados de IT con más de 30 años Y salario mayor a 60,000
-Empleados cuyo nombre empieza con 'L' O son de RRHH
-Desafío: Combina operadores lógicos con filtros de texto y numéricos.
+    > Pista: El método `isin()` acepta una lista de valores para comparar.
 
-Implementa tu solución en: src/ejercicio_05.py
+    Implementa tu solución en: `src/ejercicio_03.py`
+</details>
 
-Archivo: src/ejercicio_05.py
+<details>
+    <summary><strong>Ejercicio 4: Filtros con Texto</strong></summary>
+
+    Filtra usando métodos de string:
+    - Empleados cuyos nombres empiezan con 'M'
+    - Departamentos que contienen 'R'
+
+    > Pista: Usa `.str.startswith()` y `.str.contains()` para filtros de texto.
+
+    Implementa tu solución en: `src/ejercicio_04.py`
+</details>
+
+<details>
+    <summary><strong>Ejercicio 5: Combinando Filtros</strong></summary>
+
+    Combina diferentes tipos de filtros:
+    - Empleados de IT con más de 30 años **Y** salario mayor a 60,000
+    - Empleados cuyo nombre empieza con 'L' **O** son de RRHH
+
+    > Desafío: Combina operadores lógicos con filtros de texto y numéricos.
+
+    Implementa tu solución en: `src/ejercicio_05.py`
+</details>
